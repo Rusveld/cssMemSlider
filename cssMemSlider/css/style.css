@@ -1,0 +1,107 @@
+
+.wrapper{
+    background-color: rgb(42, 45, 63);
+    width: 1920px;
+    height: 1080px;
+    margin-top: 0px;
+}
+
+
+.cool{
+    display: flex;
+    height:100%;
+    width: 400%;
+    overflow: hidden;
+    object-fit:none;
+}
+
+.container{
+    width: 80%;
+    height: 80%;
+  
+    margin:0 auto;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.img-container{
+  display: flex;
+  height: 350px;
+  width: 500px;
+  position: relative;
+}
+
+.img-container .img{
+    position: absolute;
+}
+.text-container{
+    width:60%;
+    height: 100px;
+}
+
+.dots-container{
+    width:40%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+
+
+.dots{
+    position: absolute;
+    visibility:hidden;
+}
+
+.radio-btn{
+    min-width: 25px;
+    height: 25px;
+}
+
+label.for-dots{
+    position: relative;
+}
+
+label.for-dots::after{
+    position: absolute;
+    content: "";
+    width:20px;
+    height: 20px;
+    background-color: rgb(134, 134, 240);
+    border:solid 2px rgb(134, 134, 240);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+label.for-dots:hover::after{
+    background-color: transparent;
+    transition: all 0.2s;
+    border:solid 2px white;
+}
+
+
+#r1:checked ~ label.for-dots::after,
+#r2:checked ~ label.for-dots::after,
+#r3:checked ~ label.for-dots::after,
+#r4:checked ~ label.for-dots::after
+{
+    background-color: transparent;
+}
+
+
+#r1:checked ~ .i1{
+    margin-left: 0%;
+}
+#r2:checked ~ .i1{
+    margin-left: -500px;
+}
+#r3:checked ~ .i1{
+    margin-left: -50%;
+}
+#r4:checked ~ .i1{
+    margin-left: -75%;
+}
