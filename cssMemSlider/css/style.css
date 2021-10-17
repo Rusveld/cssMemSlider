@@ -1,0 +1,139 @@
+.container{
+    width:1100px;
+    height:700px;
+    background-color: rgb(42, 39, 70);
+    margin:100px auto;
+    position: relative;
+}
+
+.slider-cont{
+    width: 1000px;
+    height: 600px;
+    top:50px;
+    left:50px;
+    
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+}
+
+.imgs{
+    display: flex;
+    width: 4000px;
+    overflow: hidden;
+    
+}
+.btns{
+    justify-self: flex-end;
+    width:400px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    display:flex;
+    margin-left: 500px;
+}
+.btns label{
+    width:20px;
+    height: 20px;
+    background-color: rgb(110, 104, 175);
+    border-radius: 50%;
+    border: solid 3px rgb(110, 104, 175);
+    margin-right: 10px;
+}
+.btns label:hover{
+    border:solid 3px white;
+    background-color: white;
+}
+
+
+
+
+
+
+.img{
+    border-radius: 3%;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+.img-cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-cont input{
+    display: none;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0%;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -25%;
+}
+
+#r3:checked ~ .s1{
+    margin-left: -50%;
+}
+
+#r4:checked ~ .s1{
+    margin-left: -75%;
+}
+
+.text-area{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+}
+.text{
+    font-size: 25px;
+    color: white;
+    margin-right: 200%;
+}
+
+
+
+#r1:checked ~ .btns label,
+#r2:checked ~ .btns label,
+#r3:checked ~ .btn label,
+#r4:checked ~ .btn label
+{
+    background-color: transparent ;
+}
+
+
+
+@media  (max-width : 425px) {
+    .container{
+        width:320px;
+        height:400px;
+        background-color: rgb(42, 39, 70);
+        margin:50px auto;
+        position: relative;
+    }
+    .slider-cont{
+        width: 300px;
+        height: 300px;
+        top:50px;
+        left:10px;
+        
+        position: absolute;
+        display: flex;
+        overflow: hidden;
+    }
+    .btns{
+        width: 220px;
+        margin-left: 10px;
+    }
+    .img img{
+        width:300px;
+        height: 170px;
+    }
+    .imgs{
+        width:1200px;        
+    }
+    .text{
+        padding-top: 10%;
+        padding-left: 45%;
+    }
+}
