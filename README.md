@@ -3,4 +3,4 @@ cssMemSlider
 done by Rusveld
 
 
-deploy:https://rusveld.github.io/cssMemSlider/index.html
+deploy:https://rusveld.github.io/cssMemSlider/cssMemSlider/
