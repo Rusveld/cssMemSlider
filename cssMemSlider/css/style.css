@@ -11,7 +11,7 @@
     height: 600px;
     top:50px;
     left:50px;
-    border: solid 2px black;
+    
     position: absolute;
     display: flex;
     overflow: hidden;
@@ -28,7 +28,8 @@
     width:400px;
     justify-content: flex-end;
     align-items: flex-start;
-    display:flex
+    display:flex;
+    margin-left: 500px;
 }
 .btns label{
     width:20px;
@@ -36,11 +37,15 @@
     background-color: rgb(110, 104, 175);
     border-radius: 50%;
     border: solid 3px rgb(110, 104, 175);
+    margin-right: 10px;
 }
 .btns label:hover{
     border:solid 3px white;
     background-color: white;
 }
+
+
+
 
 
 
@@ -77,6 +82,7 @@
     width: 600px;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 
 }
 .text{
@@ -85,22 +91,46 @@
     margin-right: 200%;
 }
 
-#r1:checked ~ .t1{
-    margin-left: 0%;
+
+
+#r1:checked ~ .btns label,
+#r2:checked ~ .btns label,
+#r3:checked ~ .btn label,
+#r4:checked ~ .btn label
+{
+    background-color: transparent ;
 }
 
-#r2:checked ~ .t1{
-    margin-left: -25%;
-}
 
-#r3:checked ~ .t1{
-    margin-left: -50%;
-}
 
-#r4:checked ~ .t1{
-    margin-left: -75%;
-}
-
-#r1:checked ~ .btns label{
-    background-color: transparent;
+@media  (max-width : 425px) {
+    .container{
+        width:320px;
+        height:400px;
+        background-color: rgb(42, 39, 70);
+        margin:50px auto;
+        position: relative;
+    }
+    .slider-cont{
+        width: 300px;
+        height: 300px;
+        top:50px;
+        left:10px;
+        
+        position: absolute;
+        display: flex;
+        overflow: hidden;
+    }
+    .btns{
+        width: 220px;
+        margin-left: 10px;
+    }
+    .img img{
+        width:300px;
+        height: 170px;
+    }
+    .imgs{
+        width:1200px;        
+    }
+    
 }
