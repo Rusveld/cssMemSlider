@@ -132,5 +132,8 @@
     .imgs{
         width:1200px;        
     }
-    
+    .text{
+        padding-top: 10%;
+        padding-left: 45%;
+    }
 }
