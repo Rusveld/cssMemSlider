@@ -1,4 +1,6 @@
 # cssMemSlider
 cssMemSlider
 done by Rusveld
-deploy:
+
+
+deploy:https://rusveld.github.io/cssMemSlider/
